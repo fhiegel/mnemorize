@@ -3,7 +3,6 @@
   width: 25em;
   height: 14em;
   border-radius: 20px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
   margin: 0 auto;
 }
@@ -16,6 +15,7 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
   border-radius: 20px;
+  //border: 1px solid black;
 }
 
 .flip-card[data-face="back"] .flip-card-inner {
@@ -31,6 +31,7 @@
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 20px;
+  box-shadow: 5px 5px 5px gray
 }
 
 .flip-card-front {
