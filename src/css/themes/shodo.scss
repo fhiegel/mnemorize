@@ -1,0 +1,23 @@
+:root {
+  --flip-card-front-background-color: white;
+  --flip-card-front-color: black;
+
+  --flip-card-back-background-color: black;
+  --flip-card-back-color: white;
+}
+
+.flip-card-front,
+.flip-card-back {
+  background-image: url('../../images/enso--gray.svg');
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+.flip-card-front {
+  -webkit-text-stroke-color: #bbbbbb;
+  -webkit-text-stroke-width: .2px;
+}
+.flip-card-back {
+  -webkit-text-stroke-color: #444444;
+  -webkit-text-stroke-width: .2px;
+}
