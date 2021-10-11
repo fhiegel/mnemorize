@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import './FlipCard.scss';
+import ReactMarkdown from 'react-markdown'
 
 export type QuestionOrAnswer = {
   title: string,
@@ -19,7 +20,7 @@ const FlipCard = (props: Props) => {
   const [face, setFace] = useState('front');
   const flip = () => setFace(face === 'front' ? 'back' : 'front');
 
-  const { questionAndAnswer } = props;
+  const {questionAndAnswer} = props;
 
   return (
     <div className="flip-card" onClick={() => flip()} data-face={face}>
@@ -36,11 +37,11 @@ const FlipCard = (props: Props) => {
 };
 
 const FlipCardContent = (props: { content: QuestionOrAnswer }) => {
-  const { title, content } = props.content
-  return <>
-    <h3>{title}</h3>
-    {content && <p>{content}</p>}
-  </>;
+  const {title, content} = props.content
+  return <div className="flip-card-content">
+    {title && <h3>{title}</h3>}
+    {content && <ReactMarkdown>{content}</ReactMarkdown>}
+  </div>;
 }
 
 export default FlipCard

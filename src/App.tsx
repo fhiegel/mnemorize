@@ -104,11 +104,11 @@ const questionsAndAnswers = [
     answer: {
       title: "",
       content:
-          "La maîtrise personnelle : clarifier notre approche de la réalité.\n"
-        + "Les modèles mentaux : apprendre à nous défaire de nos préjugés.\n"
-        + "La vision partagée : savoir relier des individus ensemble.\n"
-        + "L'apprenance en équipe : favoriser la réflexion collective par le dialogue.\n"
-        + "La pensée systémique : voir les problèmes dans leur ensemble.\n"
+          "- La maîtrise personnelle : clarifier notre approche de la réalité.\n"
+        + "- Les modèles mentaux : apprendre à nous défaire de nos préjugés.\n"
+        + "- La vision partagée : savoir relier des individus ensemble.\n"
+        + "- L'apprenance en équipe : favoriser la réflexion collective par le dialogue.\n"
+        + "- La pensée systémique : voir les problèmes dans leur ensemble.\n"
     },
   },
   {
@@ -119,12 +119,12 @@ const questionsAndAnswers = [
     answer: {
       title: "",
       content:
-          "Unitaires\n"
-        + "Composants.\n"
-        + "Intégration.\n"
-        + "Contrat.\n"
-        + "Bout-en-bout.\n"
-        + "Exploratoires.\n"
+          "- Unitaires\n"
+        + "- Composants.\n"
+        + "- Intégration.\n"
+        + "- Contrat.\n"
+        + "- Bout-en-bout.\n"
+        + "- Exploratoires.\n"
         + "...\n"
     },
   },
@@ -136,10 +136,11 @@ const questionsAndAnswers = [
     answer: {
       title: "",
       content:
-          "Single responsibility principle"
-        + "Open/closed principle"
-        + "Liskov substitution principle"
-        + "Interface segregation principle"
+          "- Single responsibility principle\n"
+        + "- Open/closed principle\n"
+        + "- Liskov substitution principle\n"
+        + "- Interface segregation principle\n"
+        + "- Dependency inversion principle\n"
     },
   },
   {
@@ -177,8 +178,10 @@ const questionsAndAnswers = [
   },
   {
     question: {
-      title: "ISP: Interface segregation principle",
-      content: "Ségrégation des interfaces"
+      title: "",
+      content: "### ISP \n" +
+        "##### Interface Segregation Principle\n" +
+        "Ségrégation des interfaces"
     },
     answer: {
       title: "",
@@ -205,12 +208,12 @@ const questionsAndAnswers = [
     answer: {
       title: "« Ne parlez qu'à vos amis immédiats »",
       content:
-        "pour les fonctions requiert que toute méthode {\\displaystyle M}M d'un objet {\\displaystyle O}O peut simplement invoquer les méthodes des types suivants d'objets :\n" +
+        "pour les fonctions requiert que toute méthode M d'un objet O peut simplement invoquer les méthodes des types suivants d'objets :\n" +
         "\n" +
-        "{\\displaystyle O}O lui-même\n" +
-        "les paramètres de {\\displaystyle M}M\n" +
-        "les objets que {\\displaystyle M}M crée/instancie\n" +
-        "les objets membres de {\\displaystyle O}O"
+        "- O lui-même\n" +
+        "- les paramètres de M\n" +
+        "- les objets que M crée/instancie\n" +
+        "- les objets membres de O"
     },
   },
   {
@@ -303,9 +306,9 @@ const questionsAndAnswers = [
     answer: {
       title: "Don’t mix levels of abstraction !\n",
       content:
-        "It is difficult to read the code when you have to jump mentally between abstraction levels, which is what the SLAP principle tries to avoid.\n" +
-        "Functions should do just one thing, and they should do it well.\n" +
-        "— Robert C. Martin\n"
+        "It is difficult to read the code when you have to jump mentally between abstraction levels, which is what the SLAP principle tries to avoid.\n\n" +
+        "> Functions should do just one thing, and they should do it well.\n" +
+        "> — Robert C. Martin\n"
     },
   },
 ];
